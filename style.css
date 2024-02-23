@@ -1,0 +1,14 @@
+p {
+  color: black;
+}
+
+h2 {
+  color: red;
+}
+
+h1 {
+  color: red;
+}
+a[href^="http"] {
+  color: aquamarine;
+}

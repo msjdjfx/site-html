@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Just Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Just Coaching ........." />
+    <meta name="keywords" content="Coaching sur Paris" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="JC-Site.html">Accueil</a></li>
+        <li><a href="page-2.html">Menu</a></li>
+        <li><a href="./Exercices/abdos.html">Exercises</a></li>
+      </ul>
+    </nav>
+    <h1>Nous contacter</h1>
+    <form action="contact.html">
+      <fieldset>
+        <legend>Nous contacter</legend>
+        <div>
+          <label for="emailinput">Votre email</label>
+          <input
+            type="text"
+            name="email"
+            id="emailinput"
+            placeholder="contact@demo.fr"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="nameinput">Votre nom</label>
+          <input
+            type="text"
+            name="First name"
+            id="nameinput"
+            placeholder="Matys"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label>Sexe</label>
+          <div>
+            <input type="radio" name="sexe" id="masculin" />
+            <label for="masculin">Masculin</label>
+          </div>
+          <div>
+            <input type="radio" name="sexe" id="feminin" />
+            <label for="feminin">Féminin</label>
+          </div>
+          <div>
+            <input type="radio" name="sexe" id="Autre" />
+            <label for="Autre">Autre</label>
+          </div>
+          <div>
+            <input type="radio" name="sexe" id="Ne pas préciser" />
+            <label for="Ne pas preciser">Ne pas préciser</label>
+          </div>
+          <div>
+            <label
+              ><input type="checkbox" name="cgu" />J'accepte les conditions
+              générales d'utilisations</label
+            >
+          </div>
+          <br />
+          <div>
+            <div>
+              <label for="message"> </label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Votre message"
+              ></textarea>
+              <div>
+                <br />
+                <div>
+                  <label for="fileinput">Inserer Pièce Jointe</label>
+                  <input type="file" name="file" id="fileinput" />
+                </div>
+                <br />
+              </div>
+            </div>
+            <input type="submit" value="Envoyer un mail" />
+            <input type="reset" value="Annuler" />
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

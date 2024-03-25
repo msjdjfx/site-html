@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const randomValue = Math.floor(Math.random() * 100); // Donne un nombre de 0 à 100
+      const randomValue2 = Math.floor(Math.random() * 100); // Donne un nombre de 0 à 100
+
+      let essaie = 0;
+      let message = "";
+      let valeur1Trouve = false; //Doit être a true si la valeur 1 est trouvée
+      let message2 = "";
+      let valeur2Trouve = false; //Doit être a true si la valeur 2 est trouvée
+      let scoreMessage = "";
+      let finalScore = "";
+
+      function runscript() {
+        const saisie = parseInt(document.querySelector("#input").value); // récupère la saisie de l'utilisateur
+        const outputElem = document.getElementById("output");
+        const outputElem2 = document.getElementById("output2");
+        const scoreElem = document.getElementById("score");
+        const scoreElem2 = document.getElementById("score final");
+
+        essaie++;
+
+        if (!valeur1Trouve) {
+          console.log("Ne pas faire les tests");
+          if (randomValue > saisie) {
+            message = "Plus grand";
+          }
+          if (randomValue < saisie) {
+            message = "Plus petit";
+          }
+          if (randomValue === saisie) {
+            message = "Bravo tu as gagné(e)";
+            valeur1Trouve = true;
+          }
+        }
+        if (!valeur2Trouve) {
+          console.log("Ne pas faire les tests");
+          if (randomValue2 > saisie) {
+            message2 = "Plus grand";
+          }
+          if (randomValue2 < saisie) {
+            message2 = "Plus petit";
+          }
+          if (randomValue2 === saisie) {
+            message2 = "Bravo tu as gagné(e)";
+            valeur2Trouve = true;
+          }
+        }
+        if (essaie <= 3) {
+          scoreMessage = "Rang S";
+        }
+        if (essaie > 3 && essaie <= 6) {
+          scoreMessage = "Rang A";
+        }
+        if (essaie > 6 && essaie <= 9) {
+          scoreMessage = "Rang B";
+        }
+        if (essaie > 9 && essaie <= 12) {
+          scoreMessage = "Rang C";
+        }
+        if (essaie > 12 && essaie <= 15) {
+          scoreMessage = "Rang D";
+        }
+        if (essaie > 15 && essaie <= 18) {
+          scoreMessage = "Rang E";
+        }
+        if (essaie > 18 && essaie <= 21) {
+          scoreMessage = "Rang F";
+        }
+        if (essaie > 21) {
+          scoreMessage = "Rang G";
+        }
+        if (valeur1Trouve && valeur2Trouve) {
+          finalScore = "Bravo vous avez trouvé(e) les deux nombres";
+        }
+        outputElem.innerHTML = message;
+        outputElem2.innerHTML = message2;
+        scoreElem.innerHTML = scoreMessage;
+        scoreElem2.innerHTML = finalScore;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Nombre mystère ?</h2>
+    <input type="number" id="input" />
+
+    <button onclick="runscript()">Run Script</button>
+
+    <div id="output">La sera affiché le resultat</div>
+    <div id="output2">La sera affiché le second resulat</div>
+    <div id="score">Le score sera affiché ici</div>
+    <div id="score final">Le score final sera affiché ici</div>
+  </body>
+</html>

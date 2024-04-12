@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
-    <title>Just Contact</title>
+    <title>Contact</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Just Coaching ........." />
     <meta name="keywords" content="Coaching sur Paris" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
+    <header>
+      <h1>Portfolio of Lequeux Matys</h1>
+    </header>
     <nav>
-      <ul>
-        <li><a href="JC-Site.html">Accueil</a></li>
-        <li><a href="page-2.html">Menu</a></li>
-        <li><a href="./Exercices/abdos.html">Exercises</a></li>
-      </ul>
+      <a href="home.html">Home</a>
+      <a href="experience.html" target="_blank">Experience</a>
+      <a href="#">Contact</a>
+      <a href="aboutme.html" target="_blank">About me</a>
     </nav>
-    <h1>Nous contacter</h1>
     <form action="contact.html">
+      <div>
+        <h1><strong>Contact Me</strong></h1>
+      </div>
       <fieldset>
-        <legend>Nous contacter</legend>
         <div>
-          <label for="emailinput">Votre email</label>
+          <label for="emailinput">Your email</label>
           <input
             type="text"
             name="email"
@@ -31,7 +34,7 @@
         </div>
         <br />
         <div>
-          <label for="nameinput">Votre nom</label>
+          <label for="nameinput">Your name / Firstname</label>
           <input
             type="text"
             name="First name"
@@ -45,25 +48,19 @@
           <label>Sexe</label>
           <div>
             <input type="radio" name="sexe" id="masculin" />
-            <label for="masculin">Masculin</label>
+            <label for="masculin">Male</label>
           </div>
           <div>
             <input type="radio" name="sexe" id="feminin" />
-            <label for="feminin">Féminin</label>
+            <label for="feminin">Female</label>
           </div>
           <div>
             <input type="radio" name="sexe" id="Autre" />
-            <label for="Autre">Autre</label>
+            <label for="Autre">Other</label>
           </div>
           <div>
             <input type="radio" name="sexe" id="Ne pas préciser" />
-            <label for="Ne pas preciser">Ne pas préciser</label>
-          </div>
-          <div>
-            <label
-              ><input type="checkbox" name="cgu" />J'accepte les conditions
-              générales d'utilisations</label
-            >
+            <label for="Ne pas preciser">Do not specify</label>
           </div>
           <br />
           <div>
@@ -74,22 +71,32 @@
                 id="message"
                 cols="30"
                 rows="10"
-                placeholder="Votre message"
+                placeholder="Your message"
               ></textarea>
               <div>
                 <br />
                 <div>
-                  <label for="fileinput">Inserer Pièce Jointe</label>
+                  <label for="fileinput">Insert an attachment</label>
                   <input type="file" name="file" id="fileinput" />
                 </div>
                 <br />
               </div>
             </div>
-            <input type="submit" value="Envoyer un mail" />
-            <input type="reset" value="Annuler" />
+            <div>
+              <label
+                ><input type="checkbox" name="cgu" />Accept the terms and
+                conditions</label
+              >
+            </div>
+            <br />
+            <input type="submit" value="Send a mail" />
+            <input type="reset" value="Cancel" />
           </div>
         </div>
       </fieldset>
     </form>
+    <footer>
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
   </body>
 </html>

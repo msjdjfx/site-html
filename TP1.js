@@ -36,3 +36,4 @@ function determineGrade(studentGrade) {
   }
   return { superior, lower };
 }
+13.28;

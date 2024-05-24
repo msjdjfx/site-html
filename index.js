@@ -64,7 +64,7 @@ total *= 2; // Cela permet de multiplier par plus qu'un notre variabe
 
 console.log(total);
 
-// ** tructure de contrôle : **
+// ** Structure de contrôle : **
 let x = 5;
 let y = 5;
 

@@ -1,0 +1,30 @@
+body {
+  font-family: "Jersey 10", sans-serif;
+}
+#profil {
+  background-image: url(./img/71742537368__72B4AC91-EE16-41AA-B2CE-8671214845C0.jpg);
+}
+#lycee {
+  background-image: url(https://images.pexels.com/photos/14928743/pexels-photo-14928743.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+#Qualities {
+  background-image: url(https://media.istockphoto.com/id/1305984152/fr/photo/s%C3%A9lection-dune-excellente-qualit%C3%A9-pour-augmenter-la-satisfaction-du-client-gestion-et.jpg?s=612x612&w=0&k=20&c=b2SwhA9XWM3RJ0ullMqzAI9YzTnwfkKSJ_1K-_BRzTM=);
+}
+#competence {
+  background-image: url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+#ecole {
+  background-image: url(https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+#photo1 {
+  background-image: url(./img/Capture\ d\'écran\ 2024-05-23\ 141702\ \(1\).png);
+}
+#photo2 {
+  background-image: url(./img/Capture\ d\'écran\ 2024-05-23\ 143408.png);
+}
+#photo3 {
+  background-image: url(./img/Capture\ d\'écran\ 2024-05-23\ 142830.png);
+}
+#photo4 {
+  background-image: url(./img/Capture\ d\'écran\ 2024-05-23\ 143556.png);
+}

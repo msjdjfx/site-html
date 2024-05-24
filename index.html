@@ -1,12 +1,285 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="scroll-smooth" lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script>
-      document.write(Hello);
-    </script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+
+  <body class="bg-gray-900">
+    <header
+      id="title"
+      class="text-white text-5xl md:text-6xl lg:text-9xl text-center py-4"
+    >
+      <h1>Welcome to my Portfolio</h1>
+    </header>
+
+    <nav
+      class="bg-red-800 border-b-2 border-[#dedede] text-white text-center py-1 text-3xl sticky top-0 w-screen"
+    >
+      <a class="px-4" href="#title">Home </a>
+      <a class="px-4" href="#courses">Courses </a>
+      <a class="px-4" href="#skills-and-projects">Skill </a>
+      <a class="px-4" href="#contact">Contact me </a>
+    </nav>
+
+    <!-- ==========================HOME============================== -->
+
+    <section class="flex flex-col pb-14">
+      <h2 class="underline text-white text-center text-6xl py-10">Home</h2>
+      <div class="flex flex-wrap justify-center gap-10">
+        <div
+          class="rounded-lg flex flex-col md:flex-row size-full justify-between bg-red-800 h-full max-w-3xl p-5 m-5"
+        >
+          <div class="rounded-lg w-full md:w-3/5 text-white bg-red-800 p-5">
+            <h3 class="underline text-3xl lg:text-4xl text-center pb-3">
+              Presentation
+            </h3>
+            <p class="text-justify text-xl md:text-2xl lg:text-2xl">
+              Hello, my name is Matys Lequeux. I am 20 years old and I live
+              currently in Varades in Loire Atlantique. Of a very temperament
+              calm and composed hides a passion for football and informatic. Of
+              the passions that have followed me since a young age. Furthermore,
+              I also practices quiet activities such as drawing and reading !
+            </p>
+          </div>
+          <div
+            id="profil"
+            class="bg-cover h-46 w-96 rounded-lg h-80 w- md:w-3/6 lg:w-60 lg:h-96"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================Courses============================= -->
+
+    <section id="courses" class="flex flex-col pb-14">
+      <h2 class="underline text-white text-center text-6xl py-10">Courses</h2>
+
+      <div class="flex flex-wrap justify-center gap-10">
+        <div
+          class="rounded-lg flex flex-col md:flex-row size-full justify-between bg-red-800 h-full max-w-3xl p-5 m-5"
+        >
+          <div class="w-full md:w-3/5 text-white">
+            <h3 class="underline text-3xl lg:text-4xl text-center pb-3">
+              Lycée Joubert Maillard
+            </h3>
+            <p class="text-justify text-xl md:text-2xl lg:text-2xl pr-3">
+              During my time at Joubert Maillard high school, I started by
+              following a general path oriented towards science. In first grade,
+              I took the specialties of mathematics, SVT and geopolitics. Then,
+              due to a personal choice, I decided to reorient myself towards an
+              STMG baccalaureate, which I passed with mention!
+            </p>
+          </div>
+
+          <div
+            id="lycee"
+            class="bg-cover rounded-lg h-80 w-full md:w-2/6 lg:w-4/6 object-scale-down"
+          ></div>
+        </div>
+
+        <div
+          class="rounded-lg flex flex-col md:flex-row size-full justify-between bg-red-800 h-full max-w-3xl p-5 m-5"
+        >
+          <div
+            id="ecole"
+            class="bg-cover rounded-lg h-80 w-full md:w-2/6 lg:w-4/6 pr-2 object-scale-down"
+          ></div>
+          <div class="w-full md:w-3/5 text-white">
+            <h3 class="underline text-3xl lg:text-4xl text-center pb-3">
+              My Digital School
+            </h3>
+            <p class="text-justify text-xl md:text-2xl lg:text-2xl pl-3">
+              This first year at my digital school will have allowed me to learn
+              a lot of things and acquire new skills, particularly in
+              networking, which is a notion that is entirely new to me as well
+              as cybersecurity which is also a discovery for me I continue to
+              prepare for my BTS which will take place next year
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-lg text-justify text-white bg-red-800 text-3xl h-full max-w-3xl p-5 m-5"
+        >
+          <h3 class="underline text-3xl lg:text-4xl text-center pb-3">
+            Post Bac+2 formation
+          </h3>
+          <p class="text-xl md:text-2xl lg:text-2xl">
+            After my BTS SIO, which took place over two years, I plan to
+            complete a bachelor's degree in cybersecurity over one year in order
+            to obtain a Bac+3. Then, I would like to continue with a master's
+            degree in cybersecurity. After obtaining a Bac+5, I have not yet
+            planned ahead, because I do not know where I will be in five years
+            in terms of my studies. However, I would like to continue my studies
+            as much as possible in order to be as qualified as possible when I
+            enter the professional world.
+          </p>
+        </div>
+
+        <div
+          class="rounded-lg text-justify text-white bg-red-800 text-3xl h-full max-w-3xl p-5 m-5"
+        >
+          <h3 class="underline text-3xl lg:text-4xl text-center pb-3">
+            Job I want to practice
+          </h3>
+          <p class="text-xl md:text-2xl lg:text-2xl">
+            The job I want to pursue in the future is that of a cybersecurity
+            engineer. For what ? Because it is a profession that allows you to
+            project yourself into the future with ever greater evolution as the
+            days go by. This also interests me because this development is
+            linked to the passion I have for IT. It was with all these arguments
+            that I made the decision to pursue this profession at the end of my
+            studies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================Skills and projects========================================= -->
+
+    <section id="skills-and-projects" class="flex flex-col pb-14">
+      <h2 class="underline text-white text-center text-6xl py-10">
+        Skills and Projects
+      </h2>
+
+      <div class="flex flex-wrap justify-center gap-10">
+        <div
+          class="rounded-lg flex flex-col md:flex-row size-full text-justify text-white bg-red-800 text-3xl max-h-3xl max-w-3xl p-5 m-5"
+        >
+          <div class="w-full text-white md:w-3/5 bg-red-800 p-5">
+            <h3 class="underline text-3xl lg:text-4xl text-center pb-3">
+              Qualities
+            </h3>
+            <p class="text-xl md:text-2xl lg:text-2xl"></p>
+            <ul class="list-disc max-h-3xl max-w-3xl">
+              <li>Calm</li>
+              <li>Serious</li>
+              <li>Dynamic</li>
+              <li>Autonomous</li>
+              <li>Motivated</li>
+              <li>Creative</li>
+            </ul>
+          </div>
+          <div
+            id="Qualities"
+            class="bg-cover rounded-lg h-80 w-auto md:w-2/6 lg:w-5/6 object-scale-down"
+          ></div>
+        </div>
+
+        <div
+          class="rounded-lg flex flex-col md:flex-row size-full text-justify text-white bg-red-800 text-3xl max-h-3xl max-w-3xl p-5 m-5"
+        >
+          <div
+            id="competence"
+            class="bg-cover rounded-lg h-80 w-80 md:w-2/6 lg:w-4/6 pr-2 object-scale-down"
+          ></div>
+          <div class="w-full text-white md:w-3/5 bg-red-800 p-5">
+            <h3 class="underline text-3xl lg:text-4xl text-center pb-3">
+              Technical Competence
+            </h3>
+            <p class="text-xl md:text-2xl lg:text-2xl"></p>
+            <ul class="list-disc pl-4">
+              <li>VMware</li>
+              <li>Active Diretory</li>
+              <li>TeamViewver</li>
+              <li>Kali Linux</li>
+              <li>Office 365</li>
+              <li>HTML 5</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="rounded-lg text-justify text-white bg-red-800 text-3xl h-full max-w-3xl p-5 m-5"
+        >
+          <h3 class="underline text-3xl lg:text-4xl text-center">
+            Project 1 : Creation of my Portfolio
+          </h3>
+          <p class="text-xl md:text-2xl lg:text-2xl">
+            This project was carried out during my internship period. First, I
+            was introduced to HTML and CSS programming languages ​​so that I
+            could get my portfolio to look cleaner and more organized. Then,
+            after several practical exercises, I launched into this portfolio to
+            follow the progress of this project. Here is a link containing all
+            the projects that I carried out during this internship, which took
+            me 8 weeks to complete.
+          </p>
+        </div>
+
+        <div
+          class="rounded-lg text-justify text-white bg-red-800 text-3xl h-full max-w-3xl p-5 m-5"
+        >
+          <h3 class="underline text-3xl lg:text-4xl text-center">Project 2</h3>
+          <p class="text-xl md:text-2xl lg:text-2xl">
+            During this project with my friend Thomas Algara, we had to set up a
+            backup system using two sites, Bacula and Rancid. One allows you to
+            save user data and the other allows you to save configurations on
+            Cisco Packet Tracer. So we divided the work in two, each working
+            separately on one site. I worked on Bacula and here is the result of
+            the work I provided on Bacula.
+          </p>
+          <div class="flex flex-wrap">
+            <div id="photo1" class="bg-cover h-80 w-80 md:w-2/6 lg:w-3/6"></div>
+            <div id="photo2" class="bg-cover h-80 w-80 md:w-2/6 lg:w-3/6"></div>
+            <div id="photo3" class="bg-cover h-80 w-80 md:w-2/6 lg:w-3/6"></div>
+            <div id="photo4" class="bg-cover h-80 w-80 md:w-2/6 lg:w-3/6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================Contact me========================================= -->
+    <section id="contact" class="flex flex-col pb-14">
+      <h2 class="underline text-white text-center text-6xl py-10">
+        Contact me
+      </h2>
+      <div class="flex flex-wrap">
+        <div
+          class="text-white m-auto max-w-3xl h-full w-full p-5 text-3xl text-center"
+        >
+          <h3 class="mb-2">
+            Voici les différents endroits ou l'on peut me contacter :
+          </h3>
+
+          <ul class="list-none mb-10">
+            <li>
+              <a href="mailto:matyslequeux@gmail.com">Email</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/matys-lequeux-b06a72295/"
+                >Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="tel:+33681182463">06.81.18.24.63</a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/matys_lqx?igsh=cjc1dXVkdHhnbmZi"
+                >Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================Footer============================ -->
+
+    <footer
+      id="footer"
+      class="fixed bottom-0 h-16 border-t-2 border-[#dedede] bg-gray-900 text-white text-lg w-full flex items-center justify-center"
+    >
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
